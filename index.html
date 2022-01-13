@@ -32,19 +32,23 @@
             <div>
               <div>
                 <h1>Memory</h1>
-                <button>8GB unified memory</button>
-                <button>16GB unified memory</button>
+                <button id="DefaultMemory">8GB unified memory</button>
+                <button id="ExtraMomory">16GB unified memory</button>
               </div>
               <div>
                 <h1>Storage</h1>
-                <button>256GB SSD Storage</button>
-                <button>511GB SSD Storage</button>
-                <button>1TB SSD Storage</button>
+                <button id="DefaultStorage">256GB SSD Storage</button>
+                <button id="semiSTorage">511GB SSD Storage</button>
+                <button id="ExtraStorage">1TB SSD Storage</button>
               </div>
               <div>
                 <h1>Choose your delevery option</h1>
-                <button>Friday, Aug 25 Free Prime DeLIVERY</button>
-                <button>Friday, Aug 21 Delevery charge 20$</button>
+                <button id="FreeDeivery">
+                  Friday, Aug 25 Free Prime DeLIVERY
+                </button>
+                <button id="ExtraDelivery">
+                  Friday, Aug 21 Delevery charge 20$
+                </button>
               </div>
             </div>
 
@@ -58,20 +62,20 @@
 
                   <tr>
                     <th>Extra Memory Cost</th>
-                    <td>$ <span>0</span></td>
+                    <td>$ <span id="Memoryfiled">0</span></td>
                   </tr>
                   <tr>
                     <th>Extra Storage Cost</th>
-                    <td>$ <span>0</span></td>
+                    <td>$ <span id="StorageCostField">0</span></td>
                   </tr>
                   <tr>
                     <th>Delivery charge</th>
-                    <td>$ <span>0</span></td>
+                    <td>$ <span id="DeliveryChargeField">0</span></td>
                   </tr>
 
                   <tr>
                     <th>Total Price</th>
-                    <td>$ <span>1299</span></td>
+                    <td>$ <span id="GrandTotal">1299</span></td>
                   </tr>
                 </thead>
               </table>
@@ -93,5 +97,6 @@
         <h2 class="total">Total $<span>1299</span></h2>
       </div>
     </main>
+    <script src="Script.js"></script>
   </body>
 </html>

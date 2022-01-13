@@ -3,7 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: black;
+  color: white;
+}
 #header {
   font-size: 2rem;
   font-weight: bold;
