@@ -40,8 +40,19 @@ function grandTotal() {
 
   const total = price + bestFrice;
   document.getElementById("GrandTotal").innerText = total;
+  document.getElementById("total").innerText = total;
 }
 
+function Discount() {
+  const promo = document.getElementById("promoField").value;
+  if (promo == "stevehaku") {
+    const total = Number(document.getElementById("total").innerText);
+    const discountTotal = Math.round(total - total * 0.2);
+    document.getElementById("total").innerText = discountTotal;
+
+    document.getElementById("promoField").value = "";
+  }
+}
 document.getElementById("DefaultMemory").addEventListener("click", function () {
   const price = Custom(false, "Memoryfiled", 0);
   grandTotal();
